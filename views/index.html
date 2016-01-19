@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>coder-camps-js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body>
+	<br>
+	<div class="well container form-inline" style="text-align:center">
+		<input type="text" placeholder="Image Url..." id="inputUrl" class="form-control" />
+		<input type="text" placeholder="Title..." id="inputTitle" class="form-control" />
+		<button type="button" class="btn btn-success" onclick="createGrumpy()">Submit</button>
+	</div>
+
+	<div id="grumpy-cats"></div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        <label>Image URL</label>
+					<input type="text" placeholder="Image URL..." id="editUrl" class="form-control" />
+					<br>
+					<label>Title</label>
+					<input type="text" placeholder="Title..." id="editTitle" class="form-control" />
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <span id="edit-button"></span>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<script src="/jquery/dist/jquery.min.js"></script>
+	<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/javascript/app.js"></script>
+</body>
+</html>
